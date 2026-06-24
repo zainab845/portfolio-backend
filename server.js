@@ -16,7 +16,7 @@ const app = express()
 
 // Allow requests from your React frontend
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://your-vercel-frontend-url.vercel.app'],
+  origin: ['http://localhost:5173', 'https://portfolio-git-staging-zainab-bilals-projects-849ad4fc.vercel.app/'],
   credentials: true,
 }))
 
