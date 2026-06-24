@@ -16,9 +16,15 @@ const app = express()
 
 // Allow requests from your React frontend
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://portfolio-git-staging-zainab-bilals-projects-849ad4fc.vercel.app/'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://portfolio-git-staging-zainab-bilals-projects-849ad4fc.vercel.app',
+    'https://portfolio-git-feat-api-i-e496e3-zainab-bilals-projects-849ad4fc.vercel.app',   // ← Add this line
+    'https://your-main-portfolio.vercel.app'   // add your final domain later
+  ],
   credentials: true,
-}))
+}));
 
 // Parse incoming JSON request bodies
 app.use(express.json())
